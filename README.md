@@ -1,8 +1,8 @@
-# GoMicro
+## GoMicro
 This project aims at orchestrating a Go-powered microservices architecture with a central broker (optional) and services for authentication, logging, queue processing, and email communication.
 
 
-** Key Components: **
+##  Key Components:
 
 Broker Service (Optional): Acts as a central gateway to all services, facilitating seamless communication through JSON over gRPC and RabbitMQ messaging.
 
@@ -18,7 +18,7 @@ Service Discovery:
 
 All services, except the broker, dynamically register their access URLs with etcd, a distributed key-value store, and maintain their availability through automatic lease renewals. This elegant mechanism enables a straightforward service discovery system, with a centralized "service map" within the broker service's configuration.
 
-Additional Infrastructure:
+## Additional Infrastructure:
 
 The project includes a docker-compose.yml file to effortlessly orchestrate the following supporting services:
 
@@ -40,7 +40,9 @@ make stop            # Stop the frontend <br>
 make test            # Run all tests <br>
 make clean           # Clean up binaries
 
-# Service Management
+```
+## Service Management
+```bash
 
 make auth            # Rebuild and restart authentication service
 make broker          # Rebuild and restart broker service
