@@ -35,8 +35,6 @@ This structured approach to microservice development in Go enhances scalability,
 make up              # Start all containers without rebuilding <br>
 make down            # Stop Docker Compose <br>
 make up_build        # Stop (if running), rebuild all services, and start Docker Compose <br>
-make start           # Start the frontend <br>
-make stop            # Stop the frontend <br>
 make test            # Run all tests <br>
 make clean           # Clean up binaries
 
