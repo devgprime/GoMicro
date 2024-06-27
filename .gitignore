@@ -1,0 +1,10 @@
+.idea
+.vscode
+coverage.out
+frontApp
+logServiceApp
+mailerServiceApp
+authApp
+brokerApp
+listener
+frontEndLinux
