@@ -29,12 +29,15 @@ Mailhog: Simulates a mail server for testing the mail service's functionality.
 This structured approach to microservice development in Go enhances scalability, maintainability, and resilience. Each service is focused on a specific task, making the overall system more adaptable and easier to manage.
 
 
-# Project Management
+## Project Management
 
-make up              # Start all containers without rebuilding
-make down            # Stop Docker Compose
-make up_build        # Stop (if running), rebuild all services, and start Docker Compose
-make test            # Run all tests
+```bash
+make up              # Start all containers without rebuilding <br>
+make down            # Stop Docker Compose <br>
+make up_build        # Stop (if running), rebuild all services, and start Docker Compose <br>
+make start           # Start the frontend <br>
+make stop            # Stop the frontend <br>
+make test            # Run all tests <br>
 make clean           # Clean up binaries
 
 # Service Management
